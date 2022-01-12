@@ -1,6 +1,6 @@
 
 body{
-    max-width: 900px;
+    max-width: 960px;
     margin:auto;
     align-items: center;
     justify-content: center;
@@ -36,13 +36,14 @@ header{
    
 }
 #home_page{
-
     height: 100vh;
     width: 900px;
-    display: flex;   
+    display: flex; 
+    
 }
 #left_section{
-    width: 40vw;
+    padding-left: 30px;
+    width: 50vw;
     padding-top: 300px;
 }
 #left_section h2{
@@ -50,6 +51,8 @@ header{
     
 }
 #right_section img{
+    padding-left: 100px;
+    
     height:100vh;
     width: 30vw;
 }
