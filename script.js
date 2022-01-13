@@ -15,7 +15,7 @@ View_Work.addEventListener("click",function(){
 })
 window.addEventListener("scroll",hiddenarrow_homepage)
 function hiddenarrow_homepage() {
-    if(pageYOffset < document.documentElement.clientHeight){
+    if(window.scrollY< document.documentElement.clientHeight){
         arrow.hidden = true;
      }else {
         arrow.hidden = false;
