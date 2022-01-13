@@ -1,13 +1,14 @@
 
 body{
+    height:100vh;
+    
+}
+#main{
     max-width: 960px;
     margin:auto;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-#main{
-    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 button{
@@ -31,7 +32,8 @@ header{
 }
 
 #all_images{
-   
+   display:flex;
+   flex-direction: column;
     width: 100vh;
    
 }
@@ -39,6 +41,7 @@ header{
     height: 100vh;
     width: 900px;
     display: flex; 
+    
     
 }
 #left_section{
@@ -51,10 +54,10 @@ header{
     
 }
 #right_section img{
+   
     padding-left: 100px;
-    
     height:100vh;
-    width: 30vw;
+    width: 35vw;
 }
 #photo{
     width: 100vh;  
@@ -67,21 +70,66 @@ header{
     height:70vh;
     width: 100vh;
  }
- #scrolling_arrow{
-    position: fixed;
-    bottom:30px;
-    left: 110em;
+
+ i.fas:hover {
+    
+     cursor: pointer;
  }
- i{
-     display:inline-block;
-     font-size: 50px;
-     color:red;
- }
+ 
  footer{
+    text-align: center;
+    width:100vh;
      box-shadow: none;
  }
  footer h3{
      font-size: 2rem;
      font-style: bold;
  }
+ @media(min-width: 500px) {
+   body{
+       height:100%;
+       
+   }
+   #scrolling_arrow{
+        position: fixed;
+    bottom:30px;
+    left: 30em;
+    cursor: pointer;
+
+    }
+    i{
+     
+        display:inline-block;
+        font-size: 30px;
+        color:red;
+       
+    }
+  }
+  
+  @media(min-width: 700px) {
+    body{
+        display:flex;
+        flex-wrap: wrap;
+        height:100%;
+        
+    }
+    #right_image{
+        height:100vh;
+    }
+    #scrolling_arrow{
+     position:fixed;
+    bottom:30px;
+    left: 100em;
+    cursor: pointer;
+
+    }
+    i{
+     
+        display:inline-block;
+        font-size: 40px;
+        color:red;
+       
+    }
+      
+  }
  
